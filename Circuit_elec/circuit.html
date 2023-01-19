@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circuit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html"><button>Retour vers Page D'acceuil</button></a>
+    <h1>Calcul d'un circuit electronique:</h1>
+    <figure><img src="circuit.png" alt="circuit" title="circuit"></figure>
+    <form>
+        <p>
+            <label for="">R<sub>1</sub> </label><input autofocus type="text" name="resistance" placeholder="valeur en ohm"><br><br>
+            <label for="">R<sub>2</sub> </label><input type="text" name="resistance" placeholder="valeur en ohm"><br><br>
+            <label for="">R<sub>3</sub> </label><input type="text" name="resistance" placeholder="valeur en ohm"><br><br>
+            <label for="">R<sub>4</sub> </label><input type="text" name="resistance" placeholder="valeur en ohm"><br><br>
+            <label for="">U<sub>AD</sub> </label><input type="text" id="tension" placeholder="valeur en volt">
+        </p>
+        <input type="button" id="btn" value="calculer"><br><br>
+    
+        <label>I<sub>1</sub></label><input type="text" class="i1" readonly><br><br>
+        <label>I<sub>2</sub></label><input type="text" class="i2" readonly><br><br>
+        <label>I<sub>3</sub></label><input type="text" class="i3" readonly><br><br>
+        <label>U<sub>1</sub></label><input type="text" class="u1" readonly><br><br>
+        <label>U<sub>2</sub></label><input type="text" class="u2" readonly><br><br>
+        <label>U<sub>3</sub></label><input type="text" class="u3" readonly><br><br>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cramer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html"><button>Retour vers Page D'acceuil</button></a>
+    <h2>Resolution systeme d'equation de trois inconnue de la forme: 
+        <ul>
+            <li><strong>A</strong><sub>11</sub>X + <strong>A</strong><sub>12</sub>Y + <strong>A</strong><sub>13</sub>Z = <strong>B</strong><sub>1</sub></li>
+            <li><strong>A</strong><sub>21</sub>X + <strong>A</strong><sub>22</sub>Y + <strong>A</strong><sub>23</sub>Z = <strong>B</strong><sub>2</sub></li>
+            <li><strong>A</strong><sub>31</sub>X + <strong>A</strong><sub>32</sub>Y + <strong>A</strong><sub>33</sub>Z = <strong>B</strong><sub>3</sub></li>
+        </ul>
+    </h2>
+    <div class="constante">
+        <div>
+            <h3>coefficient de X:</h3>
+            <label for="">A<sub>11</sub> </label><input type="text" name="coeff" autofocus><br><br>
+            <label for="">A<sub>21</sub> </label><input type="text" name="coeff"><br><br>
+            <label for="">A<sub>31</sub> </label><input type="text" name="coeff">
+        </div>
+        <div>
+            <h3>coefficient de Y:</h3>
+            <label for="">A<sub>12</sub> </label><input type="text" name="coeff"><br><br>
+            <label for="">A<sub>22</sub> </label><input type="text" name="coeff"><br><br>
+            <label for="">A<sub>32</sub> </label><input type="text" name="coeff">
+        </div>
+        <div>
+            <h3>coefficient de Z:</h3>
+            <label for="">A<sub>13</sub> </label><input type="text" name="coeff"><br><br>
+            <label for="">A<sub>23</sub> </label><input type="text" name="coeff"><br><br>
+            <label for="">A<sub>33</sub> </label><input type="text" name="coeff">
+        </div>
+        <div>
+            <h3>constante B:</h3>
+            <label for="">B<sub>1</sub> </label><input type="text" name="cost"><br><br>
+            <label for="">B<sub>2</sub> </label><input type="text" name="cost"><br><br>
+            <label for="">B<sub>3</sub> </label><input type="text" name="cost">
+        </div>
+    </div>
+    <div class="resultat">
+           <input type="button" value="Résoudre" id="btn"><br><br>
+
+           <label>X:</label><input type="text" class="x" readonly><br><br>
+           <label>Y:</label><input type="text" class="y" readonly><br><br>
+           <label>Z:</label><input type="text" class="z" readonly>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

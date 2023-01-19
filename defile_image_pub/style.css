@@ -1,0 +1,48 @@
+:root{
+    --couleur1:#591925;
+    --couleur2:#A65A49;
+    --couleur3:#F2A172;
+    --blanc:#F2F2F2;
+    --noir:#0D0D0D;
+    --gris:#CECED6;
+}
+button{
+    background: none;
+    border: solid 2px var(--blanc);
+    color: var(--blanc);
+    padding: 7px 10px 7px 30px;
+    border-radius: 3px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+}
+button:hover{
+    box-shadow: 3px 3px 8px var(--couleur2);
+    cursor: pointer;
+}
+.img-slide{
+    position: relative;
+}
+.img-slide img{
+    border-radius: 10px;
+    height: 70vh;
+    width: 90%;
+    position: absolute;
+    opacity: 0;
+    margin-left: 5%;
+    transition: opacity 0.5s;
+}
+
+.img-slide img.active{
+    opacity: 1 ;
+}
+
+body{
+    background-color:var(--couleur1);
+}
+h1{
+    text-align: center;
+    color: var(--couleur3);
+    font-family: sans-serif;
+}
